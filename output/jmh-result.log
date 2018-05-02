@@ -1,0 +1,2090 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.github:java-benchmark:jar:1.0
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 113, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java benchmarks using JMH 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (build-classpath) @ java-benchmark ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ java-benchmark ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/tony/repos/benchmarks/java-benchmark/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ java-benchmark ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ java-benchmark ---
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge
+
+# Run progress: 0.00% complete, ETA 00:05:36
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 41435]
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁶ ops/ns
+Iteration   1: ≈ 10⁻⁶ ops/ns
+Iteration   2: ≈ 10⁻⁶ ops/ns
+
+# Run progress: 2.08% complete, ETA 00:05:44
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 41435]
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁶ ops/ns
+Iteration   1: ≈ 10⁻⁶ ops/ns
+Iteration   2: ≈ 10⁻⁶ ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge":
+  ≈ 10⁻⁶ ops/ns
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium
+
+# Run progress: 4.17% complete, ETA 00:05:34
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43663]
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁵ ops/ns
+Iteration   1: ≈ 10⁻⁵ ops/ns
+Iteration   2: ≈ 10⁻⁵ ops/ns
+
+# Run progress: 6.25% complete, ETA 00:05:26
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43663]
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁵ ops/ns
+Iteration   1: ≈ 10⁻⁵ ops/ns
+Iteration   2: ≈ 10⁻⁵ ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium":
+  ≈ 10⁻⁵ ops/ns
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle
+
+# Run progress: 8.33% complete, ETA 00:05:19
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 44467]
+# Fork: 1 of 2
+# Warmup Iteration   1: 0.023 ops/ns
+# Warmup Iteration   2: 0.025 ops/ns
+# Warmup Iteration   3: 0.025 ops/ns
+# Warmup Iteration   4: 0.024 ops/ns
+# Warmup Iteration   5: 0.023 ops/ns
+Iteration   1: 0.024 ops/ns
+Iteration   2: 0.024 ops/ns
+
+# Run progress: 10.41% complete, ETA 00:05:11
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 44467]
+# Fork: 2 of 2
+# Warmup Iteration   1: 0.022 ops/ns
+# Warmup Iteration   2: 0.025 ops/ns
+# Warmup Iteration   3: 0.024 ops/ns
+# Warmup Iteration   4: 0.024 ops/ns
+# Warmup Iteration   5: 0.024 ops/ns
+Iteration   1: 0.024 ops/ns
+Iteration   2: 0.024 ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle":
+  0.024 ±(99.9%) 0.002 ops/ns [Average]
+  (min, avg, max) = (0.024, 0.024, 0.024), stdev = 0.001
+  CI (99.9%): [0.022, 0.026] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall
+
+# Run progress: 12.50% complete, ETA 00:05:04
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 40713]
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻³ ops/ns
+# Warmup Iteration   2: ≈ 10⁻³ ops/ns
+# Warmup Iteration   3: ≈ 10⁻³ ops/ns
+# Warmup Iteration   4: ≈ 10⁻³ ops/ns
+# Warmup Iteration   5: ≈ 10⁻³ ops/ns
+Iteration   1: ≈ 10⁻³ ops/ns
+Iteration   2: ≈ 10⁻³ ops/ns
+
+# Run progress: 14.58% complete, ETA 00:04:56
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 40713]
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻³ ops/ns
+# Warmup Iteration   2: ≈ 10⁻³ ops/ns
+# Warmup Iteration   3: ≈ 10⁻³ ops/ns
+# Warmup Iteration   4: ≈ 10⁻³ ops/ns
+# Warmup Iteration   5: ≈ 10⁻³ ops/ns
+Iteration   1: ≈ 10⁻³ ops/ns
+Iteration   2: ≈ 10⁻³ ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall":
+  ≈ 10⁻³ ops/ns
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge
+
+# Run progress: 16.66% complete, ETA 00:04:49
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39561]
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁶ ops/ns
+Iteration   1: ≈ 10⁻⁶ ops/ns
+Iteration   2: ≈ 10⁻⁶ ops/ns
+
+# Run progress: 18.74% complete, ETA 00:04:42
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39561]
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁶ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁶ ops/ns
+Iteration   1: ≈ 10⁻⁶ ops/ns
+Iteration   2: ≈ 10⁻⁶ ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge":
+  ≈ 10⁻⁶ ops/ns
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium
+
+# Run progress: 20.83% complete, ETA 00:04:35
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 46541]
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁵ ops/ns
+Iteration   1: ≈ 10⁻⁵ ops/ns
+Iteration   2: ≈ 10⁻⁵ ops/ns
+
+# Run progress: 22.91% complete, ETA 00:04:27
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 46541]
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁵ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁵ ops/ns
+Iteration   1: ≈ 10⁻⁵ ops/ns
+Iteration   2: ≈ 10⁻⁵ ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium":
+  ≈ 10⁻⁵ ops/ns
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle
+
+# Run progress: 24.99% complete, ETA 00:04:20
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 40627]
+# Fork: 1 of 2
+# Warmup Iteration   1: 0.016 ops/ns
+# Warmup Iteration   2: 0.018 ops/ns
+# Warmup Iteration   3: 0.018 ops/ns
+# Warmup Iteration   4: 0.017 ops/ns
+# Warmup Iteration   5: 0.014 ops/ns
+Iteration   1: 0.017 ops/ns
+Iteration   2: 0.017 ops/ns
+
+# Run progress: 27.07% complete, ETA 00:04:13
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 40627]
+# Fork: 2 of 2
+# Warmup Iteration   1: 0.014 ops/ns
+# Warmup Iteration   2: 0.016 ops/ns
+# Warmup Iteration   3: 0.016 ops/ns
+# Warmup Iteration   4: 0.016 ops/ns
+# Warmup Iteration   5: 0.017 ops/ns
+Iteration   1: 0.016 ops/ns
+Iteration   2: 0.016 ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle":
+  0.017 ±(99.9%) 0.003 ops/ns [Average]
+  (min, avg, max) = (0.016, 0.017, 0.017), stdev = 0.001
+  CI (99.9%): [0.014, 0.019] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall
+
+# Run progress: 29.16% complete, ETA 00:04:06
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42367]
+# Fork: 1 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁴ ops/ns
+Iteration   1: ≈ 10⁻⁴ ops/ns
+Iteration   2: ≈ 10⁻⁴ ops/ns
+
+# Run progress: 31.24% complete, ETA 00:03:58
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42367]
+# Fork: 2 of 2
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   2: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   3: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   4: ≈ 10⁻⁴ ops/ns
+# Warmup Iteration   5: ≈ 10⁻⁴ ops/ns
+Iteration   1: ≈ 10⁻⁴ ops/ns
+Iteration   2: ≈ 10⁻⁴ ops/ns
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall":
+  ≈ 10⁻⁴ ops/ns
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge
+
+# Run progress: 33.32% complete, ETA 00:03:51
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 35539]
+# Fork: 1 of 2
+# Warmup Iteration   1: 437990.560 ns/op
+# Warmup Iteration   2: 339210.751 ns/op
+# Warmup Iteration   3: 448161.293 ns/op
+# Warmup Iteration   4: 448393.492 ns/op
+# Warmup Iteration   5: 459171.436 ns/op
+Iteration   1: 464331.267 ns/op
+Iteration   2: 457835.939 ns/op
+
+# Run progress: 35.40% complete, ETA 00:03:44
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 35539]
+# Fork: 2 of 2
+# Warmup Iteration   1: 432677.895 ns/op
+# Warmup Iteration   2: 334955.640 ns/op
+# Warmup Iteration   3: 455138.810 ns/op
+# Warmup Iteration   4: 491039.822 ns/op
+# Warmup Iteration   5: 484640.526 ns/op
+Iteration   1: 476411.447 ns/op
+Iteration   2: 472792.310 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge":
+  467842.741 ±(99.9%) 54114.738 ns/op [Average]
+  (min, avg, max) = (457835.939, 467842.741, 476411.447), stdev = 8374.316
+  CI (99.9%): [413728.003, 521957.479] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium
+
+# Run progress: 37.49% complete, ETA 00:03:37
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 45799]
+# Fork: 1 of 2
+# Warmup Iteration   1: 38253.273 ns/op
+# Warmup Iteration   2: 36368.315 ns/op
+# Warmup Iteration   3: 36882.527 ns/op
+# Warmup Iteration   4: 36866.933 ns/op
+# Warmup Iteration   5: 36794.535 ns/op
+Iteration   1: 36071.441 ns/op
+Iteration   2: 35999.653 ns/op
+
+# Run progress: 39.57% complete, ETA 00:03:29
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 45799]
+# Fork: 2 of 2
+# Warmup Iteration   1: 38308.030 ns/op
+# Warmup Iteration   2: 36740.402 ns/op
+# Warmup Iteration   3: 36751.935 ns/op
+# Warmup Iteration   4: 36677.915 ns/op
+# Warmup Iteration   5: 36617.992 ns/op
+Iteration   1: 36272.701 ns/op
+Iteration   2: 36364.355 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium":
+  36177.037 ±(99.9%) 1099.521 ns/op [Average]
+  (min, avg, max) = (35999.653, 36177.037, 36364.355), stdev = 170.152
+  CI (99.9%): [35077.517, 37276.558] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle
+
+# Run progress: 41.65% complete, ETA 00:03:22
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 33837]
+# Fork: 1 of 2
+# Warmup Iteration   1: 43.410 ns/op
+# Warmup Iteration   2: 40.096 ns/op
+# Warmup Iteration   3: 41.181 ns/op
+# Warmup Iteration   4: 41.082 ns/op
+# Warmup Iteration   5: 40.684 ns/op
+Iteration   1: 40.838 ns/op
+Iteration   2: 40.509 ns/op
+
+# Run progress: 43.74% complete, ETA 00:03:15
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 33837]
+# Fork: 2 of 2
+# Warmup Iteration   1: 44.022 ns/op
+# Warmup Iteration   2: 39.596 ns/op
+# Warmup Iteration   3: 41.323 ns/op
+# Warmup Iteration   4: 41.837 ns/op
+# Warmup Iteration   5: 42.911 ns/op
+Iteration   1: 43.199 ns/op
+Iteration   2: 41.332 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle":
+  41.470 ±(99.9%) 7.765 ns/op [Average]
+  (min, avg, max) = (40.509, 41.470, 43.199), stdev = 1.202
+  CI (99.9%): [33.704, 49.235] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall
+
+# Run progress: 45.82% complete, ETA 00:03:08
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 37643]
+# Fork: 1 of 2
+# Warmup Iteration   1: 2672.745 ns/op
+# Warmup Iteration   2: 2500.542 ns/op
+# Warmup Iteration   3: 2507.920 ns/op
+# Warmup Iteration   4: 2495.415 ns/op
+# Warmup Iteration   5: 2524.856 ns/op
+Iteration   1: 2517.682 ns/op
+Iteration   2: 2512.341 ns/op
+
+# Run progress: 47.90% complete, ETA 00:03:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 37643]
+# Fork: 2 of 2
+# Warmup Iteration   1: 2640.736 ns/op
+# Warmup Iteration   2: 2547.487 ns/op
+# Warmup Iteration   3: 2529.963 ns/op
+# Warmup Iteration   4: 2532.159 ns/op
+# Warmup Iteration   5: 2556.665 ns/op
+Iteration   1: 2710.714 ns/op
+Iteration   2: 2571.695 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall":
+  2578.108 ±(99.9%) 596.958 ns/op [Average]
+  (min, avg, max) = (2512.341, 2578.108, 2710.714), stdev = 92.380
+  CI (99.9%): [1981.150, 3175.066] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge
+
+# Run progress: 49.98% complete, ETA 00:02:53
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43215]
+# Fork: 1 of 2
+# Warmup Iteration   1: 842692.743 ns/op
+# Warmup Iteration   2: 679141.165 ns/op
+# Warmup Iteration   3: 663562.206 ns/op
+# Warmup Iteration   4: 671238.295 ns/op
+# Warmup Iteration   5: 662593.028 ns/op
+Iteration   1: 649381.071 ns/op
+Iteration   2: 667689.596 ns/op
+
+# Run progress: 52.07% complete, ETA 00:02:46
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43215]
+# Fork: 2 of 2
+# Warmup Iteration   1: 853249.257 ns/op
+# Warmup Iteration   2: 695403.570 ns/op
+# Warmup Iteration   3: 678005.757 ns/op
+# Warmup Iteration   4: 682954.982 ns/op
+# Warmup Iteration   5: 667428.328 ns/op
+Iteration   1: 677735.592 ns/op
+Iteration   2: 672655.301 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge":
+  666865.390 ±(99.9%) 79848.950 ns/op [Average]
+  (min, avg, max) = (649381.071, 666865.390, 677735.592), stdev = 12356.713
+  CI (99.9%): [587016.440, 746714.340] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium
+
+# Run progress: 54.15% complete, ETA 00:02:39
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 38885]
+# Fork: 1 of 2
+# Warmup Iteration   1: 64535.012 ns/op
+# Warmup Iteration   2: 60550.885 ns/op
+# Warmup Iteration   3: 60755.075 ns/op
+# Warmup Iteration   4: 60793.807 ns/op
+# Warmup Iteration   5: 60703.476 ns/op
+Iteration   1: 61070.575 ns/op
+Iteration   2: 60856.921 ns/op
+
+# Run progress: 56.23% complete, ETA 00:02:31
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 38885]
+# Fork: 2 of 2
+# Warmup Iteration   1: 65874.944 ns/op
+# Warmup Iteration   2: 62098.602 ns/op
+# Warmup Iteration   3: 62308.101 ns/op
+# Warmup Iteration   4: 62488.258 ns/op
+# Warmup Iteration   5: 62839.618 ns/op
+Iteration   1: 62703.743 ns/op
+Iteration   2: 62751.479 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium":
+  61845.679 ±(99.9%) 6605.968 ns/op [Average]
+  (min, avg, max) = (60856.921, 61845.679, 62751.479), stdev = 1022.281
+  CI (99.9%): [55239.712, 68451.647] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle
+
+# Run progress: 58.31% complete, ETA 00:02:24
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 33343]
+# Fork: 1 of 2
+# Warmup Iteration   1: 62.032 ns/op
+# Warmup Iteration   2: 57.257 ns/op
+# Warmup Iteration   3: 56.646 ns/op
+# Warmup Iteration   4: 56.694 ns/op
+# Warmup Iteration   5: 55.780 ns/op
+Iteration   1: 56.597 ns/op
+Iteration   2: 56.337 ns/op
+
+# Run progress: 60.40% complete, ETA 00:02:17
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 33343]
+# Fork: 2 of 2
+# Warmup Iteration   1: 62.020 ns/op
+# Warmup Iteration   2: 56.158 ns/op
+# Warmup Iteration   3: 57.340 ns/op
+# Warmup Iteration   4: 60.895 ns/op
+# Warmup Iteration   5: 56.432 ns/op
+Iteration   1: 55.808 ns/op
+Iteration   2: 58.045 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle":
+  56.697 ±(99.9%) 6.182 ns/op [Average]
+  (min, avg, max) = (55.808, 56.697, 58.045), stdev = 0.957
+  CI (99.9%): [50.515, 62.878] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall
+
+# Run progress: 62.48% complete, ETA 00:02:10
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39563]
+# Fork: 1 of 2
+# Warmup Iteration   1: 4560.297 ns/op
+# Warmup Iteration   2: 4086.574 ns/op
+# Warmup Iteration   3: 4003.725 ns/op
+# Warmup Iteration   4: 4007.688 ns/op
+# Warmup Iteration   5: 3992.059 ns/op
+Iteration   1: 3980.168 ns/op
+Iteration   2: 4078.804 ns/op
+
+# Run progress: 64.56% complete, ETA 00:02:02
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39563]
+# Fork: 2 of 2
+# Warmup Iteration   1: 4533.741 ns/op
+# Warmup Iteration   2: 4200.695 ns/op
+# Warmup Iteration   3: 4065.428 ns/op
+# Warmup Iteration   4: 4036.359 ns/op
+# Warmup Iteration   5: 4079.033 ns/op
+Iteration   1: 4078.476 ns/op
+Iteration   2: 4052.274 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall":
+  4047.431 ±(99.9%) 300.693 ns/op [Average]
+  (min, avg, max) = (3980.168, 4047.431, 4078.804), stdev = 46.533
+  CI (99.9%): [3746.738, 4348.123] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge
+
+# Run progress: 66.64% complete, ETA 00:01:55
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 44459]
+# Fork: 1 of 2
+# Warmup Iteration   1: 432599.813 ±(99.9%) 10899.033 ns/op
+# Warmup Iteration   2: 335819.664 ±(99.9%) 6605.524 ns/op
+# Warmup Iteration   3: 459279.772 ±(99.9%) 7525.636 ns/op
+# Warmup Iteration   4: 468906.707 ±(99.9%) 7145.068 ns/op
+# Warmup Iteration   5: 471102.039 ±(99.9%) 7460.879 ns/op
+Iteration   1: 463721.370 ±(99.9%) 7243.112 ns/op
+                 filterCompoundExpressionLarge·p0.00:   413184.000 ns/op
+                 filterCompoundExpressionLarge·p0.50:   444928.000 ns/op
+                 filterCompoundExpressionLarge·p0.90:   522956.800 ns/op
+                 filterCompoundExpressionLarge·p0.95:   571596.800 ns/op
+                 filterCompoundExpressionLarge·p0.99:   647372.800 ns/op
+                 filterCompoundExpressionLarge·p0.999:  856473.600 ns/op
+                 filterCompoundExpressionLarge·p0.9999: 4595712.000 ns/op
+                 filterCompoundExpressionLarge·p1.00:   4595712.000 ns/op
+
+Iteration   2: 455313.386 ±(99.9%) 3685.315 ns/op
+                 filterCompoundExpressionLarge·p0.00:   414208.000 ns/op
+                 filterCompoundExpressionLarge·p0.50:   436224.000 ns/op
+                 filterCompoundExpressionLarge·p0.90:   508672.000 ns/op
+                 filterCompoundExpressionLarge·p0.95:   546048.000 ns/op
+                 filterCompoundExpressionLarge·p0.99:   643584.000 ns/op
+                 filterCompoundExpressionLarge·p0.999:  909168.640 ns/op
+                 filterCompoundExpressionLarge·p0.9999: 1517568.000 ns/op
+                 filterCompoundExpressionLarge·p1.00:   1517568.000 ns/op
+
+
+# Run progress: 68.73% complete, ETA 00:01:48
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 44459]
+# Fork: 2 of 2
+# Warmup Iteration   1: 445383.543 ±(99.9%) 11441.573 ns/op
+# Warmup Iteration   2: 341660.595 ±(99.9%) 6910.227 ns/op
+# Warmup Iteration   3: 449849.977 ±(99.9%) 7258.441 ns/op
+# Warmup Iteration   4: 479483.332 ±(99.9%) 7306.026 ns/op
+# Warmup Iteration   5: 465039.970 ±(99.9%) 6973.134 ns/op
+Iteration   1: 466228.442 ±(99.9%) 7155.198 ns/op
+                 filterCompoundExpressionLarge·p0.00:   420864.000 ns/op
+                 filterCompoundExpressionLarge·p0.50:   444928.000 ns/op
+                 filterCompoundExpressionLarge·p0.90:   529408.000 ns/op
+                 filterCompoundExpressionLarge·p0.95:   565043.200 ns/op
+                 filterCompoundExpressionLarge·p0.99:   648192.000 ns/op
+                 filterCompoundExpressionLarge·p0.999:  945905.664 ns/op
+                 filterCompoundExpressionLarge·p0.9999: 4505600.000 ns/op
+                 filterCompoundExpressionLarge·p1.00:   4505600.000 ns/op
+
+Iteration   2: 462276.085 ±(99.9%) 4186.632 ns/op
+                 filterCompoundExpressionLarge·p0.00:   421376.000 ns/op
+                 filterCompoundExpressionLarge·p0.50:   441344.000 ns/op
+                 filterCompoundExpressionLarge·p0.90:   519168.000 ns/op
+                 filterCompoundExpressionLarge·p0.95:   562022.400 ns/op
+                 filterCompoundExpressionLarge·p0.99:   671969.280 ns/op
+                 filterCompoundExpressionLarge·p0.999:  1091340.288 ns/op
+                 filterCompoundExpressionLarge·p0.9999: 1531904.000 ns/op
+                 filterCompoundExpressionLarge·p1.00:   1531904.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge":
+  N = 8654
+  mean = 461849.499 ±(99.9%) 2891.384 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  500000.000) = 7452 
+    [ 500000.000, 1000000.000) = 1195 
+    [1000000.000, 1500000.000) = 3 
+    [1500000.000, 2000000.000) = 2 
+    [2000000.000, 2500000.000) = 0 
+    [2500000.000, 3000000.000) = 0 
+    [3000000.000, 3500000.000) = 0 
+    [3500000.000, 4000000.000) = 0 
+    [4000000.000, 4500000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) = 413184.000 ns/op
+     p(50.0000) = 442368.000 ns/op
+     p(90.0000) = 520192.000 ns/op
+     p(95.0000) = 561152.000 ns/op
+     p(99.0000) = 652288.000 ns/op
+     p(99.9000) = 937390.080 ns/op
+     p(99.9900) = 4595712.000 ns/op
+     p(99.9990) = 4595712.000 ns/op
+     p(99.9999) = 4595712.000 ns/op
+    p(100.0000) = 4595712.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium
+
+# Run progress: 70.81% complete, ETA 00:01:41
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39809]
+# Fork: 1 of 2
+# Warmup Iteration   1: 38682.082 ±(99.9%) 1222.836 ns/op
+# Warmup Iteration   2: 38104.450 ±(99.9%) 739.051 ns/op
+# Warmup Iteration   3: 37674.925 ±(99.9%) 584.716 ns/op
+# Warmup Iteration   4: 37654.904 ±(99.9%) 797.745 ns/op
+# Warmup Iteration   5: 37850.064 ±(99.9%) 522.447 ns/op
+Iteration   1: 37593.384 ±(99.9%) 395.543 ns/op
+                 filterCompoundExpressionMedium·p0.00:   34496.000 ns/op
+                 filterCompoundExpressionMedium·p0.50:   35328.000 ns/op
+                 filterCompoundExpressionMedium·p0.90:   37952.000 ns/op
+                 filterCompoundExpressionMedium·p0.95:   52352.000 ns/op
+                 filterCompoundExpressionMedium·p0.99:   76028.160 ns/op
+                 filterCompoundExpressionMedium·p0.999:  103687.808 ns/op
+                 filterCompoundExpressionMedium·p0.9999: 952505.984 ns/op
+                 filterCompoundExpressionMedium·p1.00:   1353728.000 ns/op
+
+Iteration   2: 37698.285 ±(99.9%) 489.358 ns/op
+                 filterCompoundExpressionMedium·p0.00:   34560.000 ns/op
+                 filterCompoundExpressionMedium·p0.50:   35392.000 ns/op
+                 filterCompoundExpressionMedium·p0.90:   37632.000 ns/op
+                 filterCompoundExpressionMedium·p0.95:   53312.000 ns/op
+                 filterCompoundExpressionMedium·p0.99:   77653.760 ns/op
+                 filterCompoundExpressionMedium·p0.999:  110549.888 ns/op
+                 filterCompoundExpressionMedium·p0.9999: 1312093.389 ns/op
+                 filterCompoundExpressionMedium·p1.00:   1392640.000 ns/op
+
+
+# Run progress: 72.89% complete, ETA 00:01:34
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 39809]
+# Fork: 2 of 2
+# Warmup Iteration   1: 38326.391 ±(99.9%) 860.917 ns/op
+# Warmup Iteration   2: 37938.680 ±(99.9%) 646.454 ns/op
+# Warmup Iteration   3: 38245.822 ±(99.9%) 618.503 ns/op
+# Warmup Iteration   4: 37893.801 ±(99.9%) 826.579 ns/op
+# Warmup Iteration   5: 37538.919 ±(99.9%) 542.671 ns/op
+Iteration   1: 37145.875 ±(99.9%) 347.218 ns/op
+                 filterCompoundExpressionMedium·p0.00:   34304.000 ns/op
+                 filterCompoundExpressionMedium·p0.50:   35136.000 ns/op
+                 filterCompoundExpressionMedium·p0.90:   37312.000 ns/op
+                 filterCompoundExpressionMedium·p0.95:   50755.200 ns/op
+                 filterCompoundExpressionMedium·p0.99:   73652.480 ns/op
+                 filterCompoundExpressionMedium·p0.999:  105150.976 ns/op
+                 filterCompoundExpressionMedium·p0.9999: 807192.589 ns/op
+                 filterCompoundExpressionMedium·p1.00:   1169408.000 ns/op
+
+Iteration   2: 37498.805 ±(99.9%) 517.688 ns/op
+                 filterCompoundExpressionMedium·p0.00:   34240.000 ns/op
+                 filterCompoundExpressionMedium·p0.50:   35136.000 ns/op
+                 filterCompoundExpressionMedium·p0.90:   37248.000 ns/op
+                 filterCompoundExpressionMedium·p0.95:   52928.000 ns/op
+                 filterCompoundExpressionMedium·p0.99:   82154.240 ns/op
+                 filterCompoundExpressionMedium·p0.999:  114175.488 ns/op
+                 filterCompoundExpressionMedium·p0.9999: 1364513.587 ns/op
+                 filterCompoundExpressionMedium·p1.00:   1370112.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium":
+  N = 53508
+  mean =  37483.253 ±(99.9%) 221.359 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 53492 
+    [ 125000.000,  250000.000) = 10 
+    [ 250000.000,  375000.000) = 0 
+    [ 375000.000,  500000.000) = 0 
+    [ 500000.000,  625000.000) = 0 
+    [ 625000.000,  750000.000) = 0 
+    [ 750000.000,  875000.000) = 0 
+    [ 875000.000, 1000000.000) = 0 
+    [1000000.000, 1125000.000) = 0 
+    [1125000.000, 1250000.000) = 2 
+    [1250000.000, 1375000.000) = 3 
+    [1375000.000, 1500000.000) = 1 
+    [1500000.000, 1625000.000) = 0 
+    [1625000.000, 1750000.000) = 0 
+    [1750000.000, 1875000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =  34240.000 ns/op
+     p(50.0000) =  35264.000 ns/op
+     p(90.0000) =  37504.000 ns/op
+     p(95.0000) =  52096.000 ns/op
+     p(99.0000) =  77556.480 ns/op
+     p(99.9000) = 106875.392 ns/op
+     p(99.9900) = 1162940.211 ns/op
+     p(99.9990) = 1392640.000 ns/op
+     p(99.9999) = 1392640.000 ns/op
+    p(100.0000) = 1392640.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle
+
+# Run progress: 74.98% complete, ETA 00:01:26
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 46015]
+# Fork: 1 of 2
+# Warmup Iteration   1: 588.513 ±(99.9%) 714.474 ns/op
+# Warmup Iteration   2: 103.788 ±(99.9%) 17.536 ns/op
+# Warmup Iteration   3: 93.003 ±(99.9%) 14.383 ns/op
+# Warmup Iteration   4: 90.250 ±(99.9%) 13.732 ns/op
+# Warmup Iteration   5: 101.398 ±(99.9%) 18.962 ns/op
+Iteration   1: 97.026 ±(99.9%) 15.365 ns/op
+                 filterCompoundExpressionSingle·p0.00:   51.000 ns/op
+                 filterCompoundExpressionSingle·p0.50:   58.000 ns/op
+                 filterCompoundExpressionSingle·p0.90:   63.000 ns/op
+                 filterCompoundExpressionSingle·p0.95:   67.000 ns/op
+                 filterCompoundExpressionSingle·p0.99:   402.350 ns/op
+                 filterCompoundExpressionSingle·p0.999:  15640.560 ns/op
+                 filterCompoundExpressionSingle·p0.9999: 20254.832 ns/op
+                 filterCompoundExpressionSingle·p1.00:   20832.000 ns/op
+
+Iteration   2: 88.081 ±(99.9%) 13.436 ns/op
+                 filterCompoundExpressionSingle·p0.00:   52.000 ns/op
+                 filterCompoundExpressionSingle·p0.50:   58.000 ns/op
+                 filterCompoundExpressionSingle·p0.90:   63.000 ns/op
+                 filterCompoundExpressionSingle·p0.95:   67.000 ns/op
+                 filterCompoundExpressionSingle·p0.99:   302.610 ns/op
+                 filterCompoundExpressionSingle·p0.999:  13290.304 ns/op
+                 filterCompoundExpressionSingle·p0.9999: 18967.213 ns/op
+                 filterCompoundExpressionSingle·p1.00:   19264.000 ns/op
+
+
+# Run progress: 77.06% complete, ETA 00:01:19
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 46015]
+# Fork: 2 of 2
+# Warmup Iteration   1: 692.400 ±(99.9%) 813.311 ns/op
+# Warmup Iteration   2: 135.703 ±(99.9%) 141.956 ns/op
+# Warmup Iteration   3: 84.728 ±(99.9%) 12.583 ns/op
+# Warmup Iteration   4: 124.477 ±(99.9%) 127.525 ns/op
+# Warmup Iteration   5: 85.530 ±(99.9%) 12.370 ns/op
+Iteration   1: 95.857 ±(99.9%) 14.956 ns/op
+                 filterCompoundExpressionSingle·p0.00:   53.000 ns/op
+                 filterCompoundExpressionSingle·p0.50:   58.000 ns/op
+                 filterCompoundExpressionSingle·p0.90:   64.000 ns/op
+                 filterCompoundExpressionSingle·p0.95:   72.000 ns/op
+                 filterCompoundExpressionSingle·p0.99:   385.240 ns/op
+                 filterCompoundExpressionSingle·p0.999:  15218.976 ns/op
+                 filterCompoundExpressionSingle·p0.9999: 18515.597 ns/op
+                 filterCompoundExpressionSingle·p1.00:   18752.000 ns/op
+
+Iteration   2: 89.717 ±(99.9%) 14.084 ns/op
+                 filterCompoundExpressionSingle·p0.00:   53.000 ns/op
+                 filterCompoundExpressionSingle·p0.50:   57.000 ns/op
+                 filterCompoundExpressionSingle·p0.90:   62.000 ns/op
+                 filterCompoundExpressionSingle·p0.95:   70.000 ns/op
+                 filterCompoundExpressionSingle·p0.99:   262.890 ns/op
+                 filterCompoundExpressionSingle·p0.999:  13628.192 ns/op
+                 filterCompoundExpressionSingle·p0.9999: 19940.419 ns/op
+                 filterCompoundExpressionSingle·p1.00:   21856.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle":
+  N = 89449
+  mean =     92.650 ±(99.9%) 7.237 ns/op
+
+  Histogram, ns/op:
+    [    0.000,  2500.000) = 89278 
+    [ 2500.000,  5000.000) = 13 
+    [ 5000.000,  7500.000) = 2 
+    [ 7500.000, 10000.000) = 1 
+    [10000.000, 12500.000) = 12 
+    [12500.000, 15000.000) = 55 
+    [15000.000, 17500.000) = 29 
+    [17500.000, 20000.000) = 55 
+    [20000.000, 22500.000) = 4 
+    [22500.000, 25000.000) = 0 
+    [25000.000, 27500.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =     51.000 ns/op
+     p(50.0000) =     58.000 ns/op
+     p(90.0000) =     63.000 ns/op
+     p(95.0000) =     70.000 ns/op
+     p(99.0000) =    323.000 ns/op
+     p(99.9000) =  14539.200 ns/op
+     p(99.9900) =  18753.760 ns/op
+     p(99.9990) =  21856.000 ns/op
+     p(99.9999) =  21856.000 ns/op
+    p(100.0000) =  21856.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall
+
+# Run progress: 79.14% complete, ETA 00:01:12
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 37927]
+# Fork: 1 of 2
+# Warmup Iteration   1: 3480.228 ±(99.9%) 384.074 ns/op
+# Warmup Iteration   2: 2942.751 ±(99.9%) 291.087 ns/op
+# Warmup Iteration   3: 2869.816 ±(99.9%) 141.405 ns/op
+# Warmup Iteration   4: 2781.297 ±(99.9%) 160.993 ns/op
+# Warmup Iteration   5: 2892.604 ±(99.9%) 335.947 ns/op
+Iteration   1: 2789.275 ±(99.9%) 138.167 ns/op
+                 filterCompoundExpressionSmall·p0.00:   2412.000 ns/op
+                 filterCompoundExpressionSmall·p0.50:   2480.000 ns/op
+                 filterCompoundExpressionSmall·p0.90:   2632.000 ns/op
+                 filterCompoundExpressionSmall·p0.95:   2720.000 ns/op
+                 filterCompoundExpressionSmall·p0.99:   15820.800 ns/op
+                 filterCompoundExpressionSmall·p0.999:  23407.360 ns/op
+                 filterCompoundExpressionSmall·p0.9999: 27049.984 ns/op
+                 filterCompoundExpressionSmall·p1.00:   946176.000 ns/op
+
+Iteration   2: 2730.378 ±(99.9%) 40.343 ns/op
+                 filterCompoundExpressionSmall·p0.00:   2416.000 ns/op
+                 filterCompoundExpressionSmall·p0.50:   2476.000 ns/op
+                 filterCompoundExpressionSmall·p0.90:   2620.000 ns/op
+                 filterCompoundExpressionSmall·p0.95:   2660.000 ns/op
+                 filterCompoundExpressionSmall·p0.99:   15763.360 ns/op
+                 filterCompoundExpressionSmall·p0.999:  23623.072 ns/op
+                 filterCompoundExpressionSmall·p0.9999: 27985.504 ns/op
+                 filterCompoundExpressionSmall·p1.00:   32576.000 ns/op
+
+
+# Run progress: 81.22% complete, ETA 00:01:05
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 37927]
+# Fork: 2 of 2
+# Warmup Iteration   1: 3467.991 ±(99.9%) 419.694 ns/op
+# Warmup Iteration   2: 2764.479 ±(99.9%) 271.130 ns/op
+# Warmup Iteration   3: 2756.714 ±(99.9%) 243.567 ns/op
+# Warmup Iteration   4: 2742.974 ±(99.9%) 202.294 ns/op
+# Warmup Iteration   5: 2703.441 ±(99.9%) 38.928 ns/op
+Iteration   1: 2657.825 ±(99.9%) 36.700 ns/op
+                 filterCompoundExpressionSmall·p0.00:   2376.000 ns/op
+                 filterCompoundExpressionSmall·p0.50:   2440.000 ns/op
+                 filterCompoundExpressionSmall·p0.90:   2564.000 ns/op
+                 filterCompoundExpressionSmall·p0.95:   2620.000 ns/op
+                 filterCompoundExpressionSmall·p0.99:   15288.640 ns/op
+                 filterCompoundExpressionSmall·p0.999:  22560.512 ns/op
+                 filterCompoundExpressionSmall·p0.9999: 25413.715 ns/op
+                 filterCompoundExpressionSmall·p1.00:   25696.000 ns/op
+
+Iteration   2: 2790.889 ±(99.9%) 213.255 ns/op
+                 filterCompoundExpressionSmall·p0.00:   2376.000 ns/op
+                 filterCompoundExpressionSmall·p0.50:   2452.000 ns/op
+                 filterCompoundExpressionSmall·p0.90:   2592.000 ns/op
+                 filterCompoundExpressionSmall·p0.95:   2660.000 ns/op
+                 filterCompoundExpressionSmall·p0.99:   15856.000 ns/op
+                 filterCompoundExpressionSmall·p0.999:  23297.024 ns/op
+                 filterCompoundExpressionSmall·p0.9999: 535567.565 ns/op
+                 filterCompoundExpressionSmall·p1.00:   1265664.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall":
+  N = 95509
+  mean =   2741.648 ±(99.9%) 64.873 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 95506 
+    [ 125000.000,  250000.000) = 0 
+    [ 250000.000,  375000.000) = 0 
+    [ 375000.000,  500000.000) = 0 
+    [ 500000.000,  625000.000) = 0 
+    [ 625000.000,  750000.000) = 0 
+    [ 750000.000,  875000.000) = 1 
+    [ 875000.000, 1000000.000) = 1 
+    [1000000.000, 1125000.000) = 0 
+    [1125000.000, 1250000.000) = 0 
+    [1250000.000, 1375000.000) = 1 
+    [1375000.000, 1500000.000) = 0 
+    [1500000.000, 1625000.000) = 0 
+    [1625000.000, 1750000.000) = 0 
+    [1750000.000, 1875000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =   2376.000 ns/op
+     p(50.0000) =   2464.000 ns/op
+     p(90.0000) =   2608.000 ns/op
+     p(95.0000) =   2668.000 ns/op
+     p(99.0000) =  15728.000 ns/op
+     p(99.9000) =  23232.000 ns/op
+     p(99.9900) =  26928.992 ns/op
+     p(99.9990) = 1265664.000 ns/op
+     p(99.9999) = 1265664.000 ns/op
+    p(100.0000) = 1265664.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge
+
+# Run progress: 83.31% complete, ETA 00:00:57
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 38035]
+# Fork: 1 of 2
+# Warmup Iteration   1: 1026457.811 ±(99.9%) 29846.158 ns/op
+# Warmup Iteration   2: 722967.711 ±(99.9%) 16478.697 ns/op
+# Warmup Iteration   3: 711724.490 ±(99.9%) 14750.267 ns/op
+# Warmup Iteration   4: 684931.071 ±(99.9%) 12035.385 ns/op
+# Warmup Iteration   5: 707887.864 ±(99.9%) 10116.397 ns/op
+Iteration   1: 750758.948 ±(99.9%) 18843.515 ns/op
+                 filterStreamOperationsLarge·p0.00:   602112.000 ns/op
+                 filterStreamOperationsLarge·p0.50:   689152.000 ns/op
+                 filterStreamOperationsLarge·p0.90:   938803.200 ns/op
+                 filterStreamOperationsLarge·p0.95:   1110016.000 ns/op
+                 filterStreamOperationsLarge·p0.99:   1534279.680 ns/op
+                 filterStreamOperationsLarge·p0.999:  3676020.736 ns/op
+                 filterStreamOperationsLarge·p0.9999: 4661248.000 ns/op
+                 filterStreamOperationsLarge·p1.00:   4661248.000 ns/op
+
+Iteration   2: 776578.685 ±(99.9%) 13967.188 ns/op
+                 filterStreamOperationsLarge·p0.00:   611328.000 ns/op
+                 filterStreamOperationsLarge·p0.50:   749568.000 ns/op
+                 filterStreamOperationsLarge·p0.90:   907673.600 ns/op
+                 filterStreamOperationsLarge·p0.95:   1006796.800 ns/op
+                 filterStreamOperationsLarge·p0.99:   1191362.560 ns/op
+                 filterStreamOperationsLarge·p0.999:  3541696.512 ns/op
+                 filterStreamOperationsLarge·p0.9999: 4448256.000 ns/op
+                 filterStreamOperationsLarge·p1.00:   4448256.000 ns/op
+
+
+# Run progress: 85.39% complete, ETA 00:00:50
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 38035]
+# Fork: 2 of 2
+# Warmup Iteration   1: 991664.604 ±(99.9%) 27333.016 ns/op
+# Warmup Iteration   2: 865174.497 ±(99.9%) 24965.352 ns/op
+# Warmup Iteration   3: 732769.595 ±(99.9%) 13608.256 ns/op
+# Warmup Iteration   4: 701204.300 ±(99.9%) 8192.543 ns/op
+# Warmup Iteration   5: 664336.340 ±(99.9%) 11236.893 ns/op
+Iteration   1: 680740.970 ±(99.9%) 11686.630 ns/op
+                 filterStreamOperationsLarge·p0.00:   604160.000 ns/op
+                 filterStreamOperationsLarge·p0.50:   642048.000 ns/op
+                 filterStreamOperationsLarge·p0.90:   813056.000 ns/op
+                 filterStreamOperationsLarge·p0.95:   887808.000 ns/op
+                 filterStreamOperationsLarge·p0.99:   1110364.160 ns/op
+                 filterStreamOperationsLarge·p0.999:  2797895.680 ns/op
+                 filterStreamOperationsLarge·p0.9999: 4104192.000 ns/op
+                 filterStreamOperationsLarge·p1.00:   4104192.000 ns/op
+
+Iteration   2: 696869.132 ±(99.9%) 15955.728 ns/op
+                 filterStreamOperationsLarge·p0.00:   604160.000 ns/op
+                 filterStreamOperationsLarge·p0.50:   650240.000 ns/op
+                 filterStreamOperationsLarge·p0.90:   811008.000 ns/op
+                 filterStreamOperationsLarge·p0.95:   922880.000 ns/op
+                 filterStreamOperationsLarge·p0.99:   1432780.800 ns/op
+                 filterStreamOperationsLarge·p0.999:  3638568.960 ns/op
+                 filterStreamOperationsLarge·p0.9999: 4915200.000 ns/op
+                 filterStreamOperationsLarge·p1.00:   4915200.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge":
+  N = 5520
+  mean = 724158.516 ±(99.9%) 7799.220 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  500000.000) = 0 
+    [ 500000.000, 1000000.000) = 5270 
+    [1000000.000, 1500000.000) = 222 
+    [1500000.000, 2000000.000) = 24 
+    [2000000.000, 2500000.000) = 0 
+    [2500000.000, 3000000.000) = 0 
+    [3000000.000, 3500000.000) = 0 
+    [3500000.000, 4000000.000) = 0 
+    [4000000.000, 4500000.000) = 2 
+
+  Percentiles, ns/op:
+      p(0.0000) = 602112.000 ns/op
+     p(50.0000) = 674816.000 ns/op
+     p(90.0000) = 871424.000 ns/op
+     p(95.0000) = 978892.800 ns/op
+     p(99.0000) = 1357393.920 ns/op
+     p(99.9000) = 1936668.672 ns/op
+     p(99.9900) = 4915200.000 ns/op
+     p(99.9990) = 4915200.000 ns/op
+     p(99.9999) = 4915200.000 ns/op
+    p(100.0000) = 4915200.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium
+
+# Run progress: 87.47% complete, ETA 00:00:43
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42785]
+# Fork: 1 of 2
+# Warmup Iteration   1: 69185.682 ±(99.9%) 1354.049 ns/op
+# Warmup Iteration   2: 64083.346 ±(99.9%) 556.312 ns/op
+# Warmup Iteration   3: 65901.849 ±(99.9%) 615.167 ns/op
+# Warmup Iteration   4: 63638.307 ±(99.9%) 529.871 ns/op
+# Warmup Iteration   5: 63360.463 ±(99.9%) 563.410 ns/op
+Iteration   1: 63563.949 ±(99.9%) 915.592 ns/op
+                 filterStreamOperationsMedium·p0.00:   58048.000 ns/op
+                 filterStreamOperationsMedium·p0.50:   58688.000 ns/op
+                 filterStreamOperationsMedium·p0.90:   72576.000 ns/op
+                 filterStreamOperationsMedium·p0.95:   89472.000 ns/op
+                 filterStreamOperationsMedium·p0.99:   121177.600 ns/op
+                 filterStreamOperationsMedium·p0.999:  158538.240 ns/op
+                 filterStreamOperationsMedium·p0.9999: 2920693.760 ns/op
+                 filterStreamOperationsMedium·p1.00:   3248128.000 ns/op
+
+Iteration   2: 65484.915 ±(99.9%) 480.230 ns/op
+                 filterStreamOperationsMedium·p0.00:   58112.000 ns/op
+                 filterStreamOperationsMedium·p0.50:   58752.000 ns/op
+                 filterStreamOperationsMedium·p0.90:   88192.000 ns/op
+                 filterStreamOperationsMedium·p0.95:   94720.000 ns/op
+                 filterStreamOperationsMedium·p0.99:   130560.000 ns/op
+                 filterStreamOperationsMedium·p0.999:  169344.512 ns/op
+                 filterStreamOperationsMedium·p0.9999: 735796.710 ns/op
+                 filterStreamOperationsMedium·p1.00:   1314816.000 ns/op
+
+
+# Run progress: 89.55% complete, ETA 00:00:36
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42785]
+# Fork: 2 of 2
+# Warmup Iteration   1: 66087.921 ±(99.9%) 798.814 ns/op
+# Warmup Iteration   2: 62380.071 ±(99.9%) 595.082 ns/op
+# Warmup Iteration   3: 63322.396 ±(99.9%) 600.548 ns/op
+# Warmup Iteration   4: 63188.073 ±(99.9%) 572.049 ns/op
+# Warmup Iteration   5: 61645.911 ±(99.9%) 715.548 ns/op
+Iteration   1: 62592.112 ±(99.9%) 541.292 ns/op
+                 filterStreamOperationsMedium·p0.00:   57600.000 ns/op
+                 filterStreamOperationsMedium·p0.50:   58176.000 ns/op
+                 filterStreamOperationsMedium·p0.90:   73600.000 ns/op
+                 filterStreamOperationsMedium·p0.95:   93184.000 ns/op
+                 filterStreamOperationsMedium·p0.99:   118069.760 ns/op
+                 filterStreamOperationsMedium·p0.999:  160266.752 ns/op
+                 filterStreamOperationsMedium·p0.9999: 997897.779 ns/op
+                 filterStreamOperationsMedium·p1.00:   2183168.000 ns/op
+
+Iteration   2: 61266.544 ±(99.9%) 450.944 ns/op
+                 filterStreamOperationsMedium·p0.00:   57600.000 ns/op
+                 filterStreamOperationsMedium·p0.50:   58176.000 ns/op
+                 filterStreamOperationsMedium·p0.90:   61696.000 ns/op
+                 filterStreamOperationsMedium·p0.95:   77696.000 ns/op
+                 filterStreamOperationsMedium·p0.99:   112640.000 ns/op
+                 filterStreamOperationsMedium·p0.999:  158720.000 ns/op
+                 filterStreamOperationsMedium·p0.9999: 792896.077 ns/op
+                 filterStreamOperationsMedium·p1.00:   1824768.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium":
+  N = 63214
+  mean =  63189.595 ±(99.9%) 312.648 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  250000.000) = 63209 
+    [ 250000.000,  500000.000) = 0 
+    [ 500000.000,  750000.000) = 0 
+    [ 750000.000, 1000000.000) = 0 
+    [1000000.000, 1250000.000) = 0 
+    [1250000.000, 1500000.000) = 1 
+    [1500000.000, 1750000.000) = 0 
+    [1750000.000, 2000000.000) = 1 
+    [2000000.000, 2250000.000) = 1 
+    [2250000.000, 2500000.000) = 0 
+    [2500000.000, 2750000.000) = 1 
+    [2750000.000, 3000000.000) = 0 
+    [3000000.000, 3250000.000) = 1 
+    [3250000.000, 3500000.000) = 0 
+    [3500000.000, 3750000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =  57600.000 ns/op
+     p(50.0000) =  58560.000 ns/op
+     p(90.0000) =  74752.000 ns/op
+     p(95.0000) =  92416.000 ns/op
+     p(99.0000) = 124032.000 ns/op
+     p(99.9000) = 160512.000 ns/op
+     p(99.9900) = 217617.664 ns/op
+     p(99.9990) = 3248128.000 ns/op
+     p(99.9999) = 3248128.000 ns/op
+    p(100.0000) = 3248128.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle
+
+# Run progress: 91.64% complete, ETA 00:00:29
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 36803]
+# Fork: 1 of 2
+# Warmup Iteration   1: 493.305 ±(99.9%) 590.786 ns/op
+# Warmup Iteration   2: 106.421 ±(99.9%) 12.576 ns/op
+# Warmup Iteration   3: 94.141 ±(99.9%) 9.655 ns/op
+# Warmup Iteration   4: 90.786 ±(99.9%) 8.471 ns/op
+# Warmup Iteration   5: 94.054 ±(99.9%) 9.942 ns/op
+Iteration   1: 121.478 ±(99.9%) 83.301 ns/op
+                 filterStreamOperationsSingle·p0.00:   63.000 ns/op
+                 filterStreamOperationsSingle·p0.50:   68.000 ns/op
+                 filterStreamOperationsSingle·p0.90:   75.000 ns/op
+                 filterStreamOperationsSingle·p0.95:   82.000 ns/op
+                 filterStreamOperationsSingle·p0.99:   298.480 ns/op
+                 filterStreamOperationsSingle·p0.999:  13015.168 ns/op
+                 filterStreamOperationsSingle·p0.9999: 22227.405 ns/op
+                 filterStreamOperationsSingle·p1.00:   842752.000 ns/op
+
+Iteration   2: 93.839 ±(99.9%) 9.329 ns/op
+                 filterStreamOperationsSingle·p0.00:   63.000 ns/op
+                 filterStreamOperationsSingle·p0.50:   68.000 ns/op
+                 filterStreamOperationsSingle·p0.90:   75.000 ns/op
+                 filterStreamOperationsSingle·p0.95:   82.000 ns/op
+                 filterStreamOperationsSingle·p0.99:   297.070 ns/op
+                 filterStreamOperationsSingle·p0.999:  12630.848 ns/op
+                 filterStreamOperationsSingle·p0.9999: 18570.285 ns/op
+                 filterStreamOperationsSingle·p1.00:   18816.000 ns/op
+
+
+# Run progress: 93.72% complete, ETA 00:00:21
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 36803]
+# Fork: 2 of 2
+# Warmup Iteration   1: 571.324 ±(99.9%) 647.025 ns/op
+# Warmup Iteration   2: 111.637 ±(99.9%) 13.798 ns/op
+# Warmup Iteration   3: 102.020 ±(99.9%) 11.558 ns/op
+# Warmup Iteration   4: 98.803 ±(99.9%) 10.970 ns/op
+# Warmup Iteration   5: 98.937 ±(99.9%) 10.563 ns/op
+Iteration   1: 89.194 ±(99.9%) 9.020 ns/op
+                 filterStreamOperationsSingle·p0.00:   64.000 ns/op
+                 filterStreamOperationsSingle·p0.50:   70.000 ns/op
+                 filterStreamOperationsSingle·p0.90:   78.000 ns/op
+                 filterStreamOperationsSingle·p0.95:   83.000 ns/op
+                 filterStreamOperationsSingle·p0.99:   149.000 ns/op
+                 filterStreamOperationsSingle·p0.999:  2433.300 ns/op
+                 filterStreamOperationsSingle·p0.9999: 20103.936 ns/op
+                 filterStreamOperationsSingle·p1.00:   21824.000 ns/op
+
+Iteration   2: 123.031 ±(99.9%) 96.933 ns/op
+                 filterStreamOperationsSingle·p0.00:   64.000 ns/op
+                 filterStreamOperationsSingle·p0.50:   70.000 ns/op
+                 filterStreamOperationsSingle·p0.90:   80.000 ns/op
+                 filterStreamOperationsSingle·p0.95:   85.000 ns/op
+                 filterStreamOperationsSingle·p0.99:   289.170 ns/op
+                 filterStreamOperationsSingle·p0.999:  12184.032 ns/op
+                 filterStreamOperationsSingle·p0.9999: 18564.275 ns/op
+                 filterStreamOperationsSingle·p1.00:   985088.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle":
+  N = 134079
+  mean =    106.904 ±(99.9%) 32.160 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  100000.000) = 134077 
+    [ 100000.000,  200000.000) = 0 
+    [ 200000.000,  300000.000) = 0 
+    [ 300000.000,  400000.000) = 0 
+    [ 400000.000,  500000.000) = 0 
+    [ 500000.000,  600000.000) = 0 
+    [ 600000.000,  700000.000) = 0 
+    [ 700000.000,  800000.000) = 0 
+    [ 800000.000,  900000.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =     63.000 ns/op
+     p(50.0000) =     69.000 ns/op
+     p(90.0000) =     78.000 ns/op
+     p(95.0000) =     83.000 ns/op
+     p(99.0000) =    250.200 ns/op
+     p(99.9000) =  12509.440 ns/op
+     p(99.9900) =  18656.000 ns/op
+     p(99.9990) = 936579.891 ns/op
+     p(99.9999) = 985088.000 ns/op
+    p(100.0000) = 985088.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall
+
+# Run progress: 95.80% complete, ETA 00:00:14
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42249]
+# Fork: 1 of 2
+# Warmup Iteration   1: 4795.194 ±(99.9%) 359.948 ns/op
+# Warmup Iteration   2: 4088.374 ±(99.9%) 183.838 ns/op
+# Warmup Iteration   3: 4000.948 ±(99.9%) 49.505 ns/op
+# Warmup Iteration   4: 4325.977 ±(99.9%) 53.122 ns/op
+# Warmup Iteration   5: 4132.930 ±(99.9%) 138.549 ns/op
+Iteration   1: 4073.384 ±(99.9%) 195.882 ns/op
+                 filterStreamOperationsSmall·p0.00:   3612.000 ns/op
+                 filterStreamOperationsSmall·p0.50:   3720.000 ns/op
+                 filterStreamOperationsSmall·p0.90:   3884.000 ns/op
+                 filterStreamOperationsSmall·p0.95:   3988.000 ns/op
+                 filterStreamOperationsSmall·p0.99:   17018.560 ns/op
+                 filterStreamOperationsSmall·p0.999:  24069.856 ns/op
+                 filterStreamOperationsSmall·p0.9999: 837021.014 ns/op
+                 filterStreamOperationsSmall·p1.00:   1175552.000 ns/op
+
+Iteration   2: 4045.768 ±(99.9%) 145.378 ns/op
+                 filterStreamOperationsSmall·p0.00:   3604.000 ns/op
+                 filterStreamOperationsSmall·p0.50:   3728.000 ns/op
+                 filterStreamOperationsSmall·p0.90:   3948.000 ns/op
+                 filterStreamOperationsSmall·p0.95:   4064.000 ns/op
+                 filterStreamOperationsSmall·p0.99:   17344.000 ns/op
+                 filterStreamOperationsSmall·p0.999:  23553.920 ns/op
+                 filterStreamOperationsSmall·p0.9999: 26985.472 ns/op
+                 filterStreamOperationsSmall·p1.00:   1351680.000 ns/op
+
+
+# Run progress: 97.88% complete, ETA 00:00:07
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42249]
+# Fork: 2 of 2
+# Warmup Iteration   1: 5137.394 ±(99.9%) 338.057 ns/op
+# Warmup Iteration   2: 4374.418 ±(99.9%) 38.406 ns/op
+# Warmup Iteration   3: 4339.761 ±(99.9%) 37.458 ns/op
+# Warmup Iteration   4: 4367.690 ±(99.9%) 179.181 ns/op
+# Warmup Iteration   5: 4385.435 ±(99.9%) 222.441 ns/op
+Iteration   1: 4439.566 ±(99.9%) 220.589 ns/op
+                 filterStreamOperationsSmall·p0.00:   3868.000 ns/op
+                 filterStreamOperationsSmall·p0.50:   4072.000 ns/op
+                 filterStreamOperationsSmall·p0.90:   4224.000 ns/op
+                 filterStreamOperationsSmall·p0.95:   4336.000 ns/op
+                 filterStreamOperationsSmall·p0.99:   17696.000 ns/op
+                 filterStreamOperationsSmall·p0.999:  24552.576 ns/op
+                 filterStreamOperationsSmall·p0.9999: 1021054.566 ns/op
+                 filterStreamOperationsSmall·p1.00:   1234944.000 ns/op
+
+Iteration   2: 4363.708 ±(99.9%) 163.336 ns/op
+                 filterStreamOperationsSmall·p0.00:   3876.000 ns/op
+                 filterStreamOperationsSmall·p0.50:   4056.000 ns/op
+                 filterStreamOperationsSmall·p0.90:   4264.000 ns/op
+                 filterStreamOperationsSmall·p0.95:   4352.000 ns/op
+                 filterStreamOperationsSmall·p0.99:   17536.000 ns/op
+                 filterStreamOperationsSmall·p0.999:  24309.024 ns/op
+                 filterStreamOperationsSmall·p0.9999: 31865.997 ns/op
+                 filterStreamOperationsSmall·p1.00:   1423360.000 ns/op
+
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall":
+  N = 121870
+  mean =   4224.019 ±(99.9%) 91.508 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 121862 
+    [ 125000.000,  250000.000) = 0 
+    [ 250000.000,  375000.000) = 0 
+    [ 375000.000,  500000.000) = 0 
+    [ 500000.000,  625000.000) = 0 
+    [ 625000.000,  750000.000) = 0 
+    [ 750000.000,  875000.000) = 0 
+    [ 875000.000, 1000000.000) = 0 
+    [1000000.000, 1125000.000) = 4 
+    [1125000.000, 1250000.000) = 2 
+    [1250000.000, 1375000.000) = 1 
+    [1375000.000, 1500000.000) = 1 
+    [1500000.000, 1625000.000) = 0 
+    [1625000.000, 1750000.000) = 0 
+    [1750000.000, 1875000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =   3604.000 ns/op
+     p(50.0000) =   3940.000 ns/op
+     p(90.0000) =   4144.000 ns/op
+     p(95.0000) =   4288.000 ns/op
+     p(99.0000) =  17472.000 ns/op
+     p(99.9000) =  24096.000 ns/op
+     p(99.9900) =  31096.154 ns/op
+     p(99.9990) = 1407682.867 ns/op
+     p(99.9999) = 1423360.000 ns/op
+    p(100.0000) = 1423360.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge
+
+# Run progress: 99.97% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42173]
+# Fork: 1 of 2
+# Warmup Iteration   1: 4905532.000 ns/op
+# Warmup Iteration   2: 1172665.000 ns/op
+# Warmup Iteration   3: 1195092.000 ns/op
+# Warmup Iteration   4: 1162050.000 ns/op
+# Warmup Iteration   5: 1118086.000 ns/op
+Iteration   1: 1208878.000 ns/op
+Iteration   2: 1027936.000 ns/op
+
+# Run progress: 99.97% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 42173]
+# Fork: 2 of 2
+# Warmup Iteration   1: 4593710.000 ns/op
+# Warmup Iteration   2: 1193425.000 ns/op
+# Warmup Iteration   3: 1255170.000 ns/op
+# Warmup Iteration   4: 1185135.000 ns/op
+# Warmup Iteration   5: 1245590.000 ns/op
+Iteration   1: 1058286.000 ns/op
+Iteration   2: 1108678.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionLarge":
+  N = 4
+  mean = 1100944.500 ±(99.9%) 512353.799 ns/op
+
+  Histogram, ns/op:
+    [1000000.000, 1025000.000) = 0 
+    [1025000.000, 1050000.000) = 1 
+    [1050000.000, 1075000.000) = 1 
+    [1075000.000, 1100000.000) = 0 
+    [1100000.000, 1125000.000) = 1 
+    [1125000.000, 1150000.000) = 0 
+    [1150000.000, 1175000.000) = 0 
+    [1175000.000, 1200000.000) = 0 
+    [1200000.000, 1225000.000) = 1 
+    [1225000.000, 1250000.000) = 0 
+    [1250000.000, 1275000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) = 1027936.000 ns/op
+     p(50.0000) = 1083482.000 ns/op
+     p(90.0000) = 1208878.000 ns/op
+     p(95.0000) = 1208878.000 ns/op
+     p(99.0000) = 1208878.000 ns/op
+     p(99.9000) = 1208878.000 ns/op
+     p(99.9900) = 1208878.000 ns/op
+     p(99.9990) = 1208878.000 ns/op
+     p(99.9999) = 1208878.000 ns/op
+    p(100.0000) = 1208878.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium
+
+# Run progress: 99.97% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43597]
+# Fork: 1 of 2
+# Warmup Iteration   1: 2690205.000 ns/op
+# Warmup Iteration   2: 451814.000 ns/op
+# Warmup Iteration   3: 399677.000 ns/op
+# Warmup Iteration   4: 264675.000 ns/op
+# Warmup Iteration   5: 262733.000 ns/op
+Iteration   1: 293451.000 ns/op
+Iteration   2: 353261.000 ns/op
+
+# Run progress: 99.97% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 43597]
+# Fork: 2 of 2
+# Warmup Iteration   1: 2151791.000 ns/op
+# Warmup Iteration   2: 402614.000 ns/op
+# Warmup Iteration   3: 368642.000 ns/op
+# Warmup Iteration   4: 297305.000 ns/op
+# Warmup Iteration   5: 269455.000 ns/op
+Iteration   1: 264012.000 ns/op
+Iteration   2: 419933.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionMedium":
+  N = 4
+  mean = 332664.250 ±(99.9%) 446000.106 ns/op
+
+  Histogram, ns/op:
+    [200000.000, 225000.000) = 0 
+    [225000.000, 250000.000) = 0 
+    [250000.000, 275000.000) = 1 
+    [275000.000, 300000.000) = 1 
+    [300000.000, 325000.000) = 0 
+    [325000.000, 350000.000) = 0 
+    [350000.000, 375000.000) = 1 
+    [375000.000, 400000.000) = 0 
+    [400000.000, 425000.000) = 1 
+    [425000.000, 450000.000) = 0 
+    [450000.000, 475000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) = 264012.000 ns/op
+     p(50.0000) = 323356.000 ns/op
+     p(90.0000) = 419933.000 ns/op
+     p(95.0000) = 419933.000 ns/op
+     p(99.0000) = 419933.000 ns/op
+     p(99.9000) = 419933.000 ns/op
+     p(99.9900) = 419933.000 ns/op
+     p(99.9990) = 419933.000 ns/op
+     p(99.9999) = 419933.000 ns/op
+    p(100.0000) = 419933.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle
+
+# Run progress: 99.98% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 37173]
+# Fork: 1 of 2
+# Warmup Iteration   1: 4556239.000 ns/op
+# Warmup Iteration   2: 99305.000 ns/op
+# Warmup Iteration   3: 23127.000 ns/op
+# Warmup Iteration   4: 30695.000 ns/op
+# Warmup Iteration   5: 19757.000 ns/op
+Iteration   1: 16062.000 ns/op
+Iteration   2: 16925.000 ns/op
+
+# Run progress: 99.98% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 37173]
+# Fork: 2 of 2
+# Warmup Iteration   1: 4997809.000 ns/op
+# Warmup Iteration   2: 42267.000 ns/op
+# Warmup Iteration   3: 18006.000 ns/op
+# Warmup Iteration   4: 13926.000 ns/op
+# Warmup Iteration   5: 31074.000 ns/op
+Iteration   1: 14206.000 ns/op
+Iteration   2: 14506.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSingle":
+  N = 4
+  mean =  15424.750 ±(99.9%) 8330.948 ns/op
+
+  Histogram, ns/op:
+    [14000.000, 14250.000) = 1 
+    [14250.000, 14500.000) = 0 
+    [14500.000, 14750.000) = 1 
+    [14750.000, 15000.000) = 0 
+    [15000.000, 15250.000) = 0 
+    [15250.000, 15500.000) = 0 
+    [15500.000, 15750.000) = 0 
+    [15750.000, 16000.000) = 0 
+    [16000.000, 16250.000) = 1 
+    [16250.000, 16500.000) = 0 
+    [16500.000, 16750.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =  14206.000 ns/op
+     p(50.0000) =  15284.000 ns/op
+     p(90.0000) =  16925.000 ns/op
+     p(95.0000) =  16925.000 ns/op
+     p(99.0000) =  16925.000 ns/op
+     p(99.9000) =  16925.000 ns/op
+     p(99.9900) =  16925.000 ns/op
+     p(99.9990) =  16925.000 ns/op
+     p(99.9999) =  16925.000 ns/op
+    p(100.0000) =  16925.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall
+
+# Run progress: 99.98% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 35655]
+# Fork: 1 of 2
+# Warmup Iteration   1: 1119973.000 ns/op
+# Warmup Iteration   2: 92460.000 ns/op
+# Warmup Iteration   3: 59250.000 ns/op
+# Warmup Iteration   4: 51706.000 ns/op
+# Warmup Iteration   5: 89470.000 ns/op
+Iteration   1: 61072.000 ns/op
+Iteration   2: 71973.000 ns/op
+
+# Run progress: 99.98% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 35655]
+# Fork: 2 of 2
+# Warmup Iteration   1: 1178410.000 ns/op
+# Warmup Iteration   2: 148471.000 ns/op
+# Warmup Iteration   3: 83015.000 ns/op
+# Warmup Iteration   4: 94924.000 ns/op
+# Warmup Iteration   5: 65593.000 ns/op
+Iteration   1: 98149.000 ns/op
+Iteration   2: 90907.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterCompoundExpressionSmall":
+  N = 4
+  mean =  80525.250 ±(99.9%) 110040.374 ns/op
+
+  Histogram, ns/op:
+    [ 60000.000,  62500.000) = 1 
+    [ 62500.000,  65000.000) = 0 
+    [ 65000.000,  67500.000) = 0 
+    [ 67500.000,  70000.000) = 0 
+    [ 70000.000,  72500.000) = 1 
+    [ 72500.000,  75000.000) = 0 
+    [ 75000.000,  77500.000) = 0 
+    [ 77500.000,  80000.000) = 0 
+    [ 80000.000,  82500.000) = 0 
+    [ 82500.000,  85000.000) = 0 
+    [ 85000.000,  87500.000) = 0 
+    [ 87500.000,  90000.000) = 0 
+    [ 90000.000,  92500.000) = 1 
+    [ 92500.000,  95000.000) = 0 
+    [ 95000.000,  97500.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =  61072.000 ns/op
+     p(50.0000) =  81440.000 ns/op
+     p(90.0000) =  98149.000 ns/op
+     p(95.0000) =  98149.000 ns/op
+     p(99.0000) =  98149.000 ns/op
+     p(99.9000) =  98149.000 ns/op
+     p(99.9900) =  98149.000 ns/op
+     p(99.9990) =  98149.000 ns/op
+     p(99.9999) =  98149.000 ns/op
+    p(100.0000) =  98149.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge
+
+# Run progress: 99.98% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 44417]
+# Fork: 1 of 2
+# Warmup Iteration   1: 6095329.000 ns/op
+# Warmup Iteration   2: 1299117.000 ns/op
+# Warmup Iteration   3: 1304217.000 ns/op
+# Warmup Iteration   4: 1191158.000 ns/op
+# Warmup Iteration   5: 948723.000 ns/op
+Iteration   1: 1085158.000 ns/op
+Iteration   2: 1144290.000 ns/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 44417]
+# Fork: 2 of 2
+# Warmup Iteration   1: 6187446.000 ns/op
+# Warmup Iteration   2: 1485939.000 ns/op
+# Warmup Iteration   3: 1646809.000 ns/op
+# Warmup Iteration   4: 1289693.000 ns/op
+# Warmup Iteration   5: 1199638.000 ns/op
+Iteration   1: 1224580.000 ns/op
+Iteration   2: 1263205.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsLarge":
+  N = 4
+  mean = 1179308.250 ±(99.9%) 516672.900 ns/op
+
+  Histogram, ns/op:
+    [1000000.000, 1025000.000) = 0 
+    [1025000.000, 1050000.000) = 0 
+    [1050000.000, 1075000.000) = 0 
+    [1075000.000, 1100000.000) = 1 
+    [1100000.000, 1125000.000) = 0 
+    [1125000.000, 1150000.000) = 1 
+    [1150000.000, 1175000.000) = 0 
+    [1175000.000, 1200000.000) = 0 
+    [1200000.000, 1225000.000) = 1 
+    [1225000.000, 1250000.000) = 0 
+    [1250000.000, 1275000.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) = 1085158.000 ns/op
+     p(50.0000) = 1184435.000 ns/op
+     p(90.0000) = 1263205.000 ns/op
+     p(95.0000) = 1263205.000 ns/op
+     p(99.0000) = 1263205.000 ns/op
+     p(99.9000) = 1263205.000 ns/op
+     p(99.9900) = 1263205.000 ns/op
+     p(99.9990) = 1263205.000 ns/op
+     p(99.9999) = 1263205.000 ns/op
+    p(100.0000) = 1263205.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium
+
+# Run progress: 99.99% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 46059]
+# Fork: 1 of 2
+# Warmup Iteration   1: 2617908.000 ns/op
+# Warmup Iteration   2: 496287.000 ns/op
+# Warmup Iteration   3: 546350.000 ns/op
+# Warmup Iteration   4: 442523.000 ns/op
+# Warmup Iteration   5: 447152.000 ns/op
+Iteration   1: 405836.000 ns/op
+Iteration   2: 439672.000 ns/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 46059]
+# Fork: 2 of 2
+# Warmup Iteration   1: 3191456.000 ns/op
+# Warmup Iteration   2: 470933.000 ns/op
+# Warmup Iteration   3: 430800.000 ns/op
+# Warmup Iteration   4: 338673.000 ns/op
+# Warmup Iteration   5: 287944.000 ns/op
+Iteration   1: 283711.000 ns/op
+Iteration   2: 373626.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsMedium":
+  N = 4
+  mean = 375711.250 ±(99.9%) 432951.233 ns/op
+
+  Histogram, ns/op:
+    [200000.000, 225000.000) = 0 
+    [225000.000, 250000.000) = 0 
+    [250000.000, 275000.000) = 0 
+    [275000.000, 300000.000) = 1 
+    [300000.000, 325000.000) = 0 
+    [325000.000, 350000.000) = 0 
+    [350000.000, 375000.000) = 1 
+    [375000.000, 400000.000) = 0 
+    [400000.000, 425000.000) = 1 
+    [425000.000, 450000.000) = 1 
+    [450000.000, 475000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) = 283711.000 ns/op
+     p(50.0000) = 389731.000 ns/op
+     p(90.0000) = 439672.000 ns/op
+     p(95.0000) = 439672.000 ns/op
+     p(99.0000) = 439672.000 ns/op
+     p(99.9000) = 439672.000 ns/op
+     p(99.9900) = 439672.000 ns/op
+     p(99.9990) = 439672.000 ns/op
+     p(99.9999) = 439672.000 ns/op
+    p(100.0000) = 439672.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle
+
+# Run progress: 99.99% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 40257]
+# Fork: 1 of 2
+# Warmup Iteration   1: 5535229.000 ns/op
+# Warmup Iteration   2: 47570.000 ns/op
+# Warmup Iteration   3: 17381.000 ns/op
+# Warmup Iteration   4: 16658.000 ns/op
+# Warmup Iteration   5: 13727.000 ns/op
+Iteration   1: 13403.000 ns/op
+Iteration   2: 14871.000 ns/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 40257]
+# Fork: 2 of 2
+# Warmup Iteration   1: 5420221.000 ns/op
+# Warmup Iteration   2: 30335.000 ns/op
+# Warmup Iteration   3: 18340.000 ns/op
+# Warmup Iteration   4: 16524.000 ns/op
+# Warmup Iteration   5: 15679.000 ns/op
+Iteration   1: 15163.000 ns/op
+Iteration   2: 16768.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSingle":
+  N = 4
+  mean =  15051.250 ±(99.9%) 8914.217 ns/op
+
+  Histogram, ns/op:
+    [13000.000, 13250.000) = 0 
+    [13250.000, 13500.000) = 1 
+    [13500.000, 13750.000) = 0 
+    [13750.000, 14000.000) = 0 
+    [14000.000, 14250.000) = 0 
+    [14250.000, 14500.000) = 0 
+    [14500.000, 14750.000) = 0 
+    [14750.000, 15000.000) = 1 
+    [15000.000, 15250.000) = 1 
+    [15250.000, 15500.000) = 0 
+    [15500.000, 15750.000) = 0 
+    [15750.000, 16000.000) = 0 
+    [16000.000, 16250.000) = 0 
+    [16250.000, 16500.000) = 0 
+    [16500.000, 16750.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =  13403.000 ns/op
+     p(50.0000) =  15017.000 ns/op
+     p(90.0000) =  16768.000 ns/op
+     p(95.0000) =  16768.000 ns/op
+     p(99.0000) =  16768.000 ns/op
+     p(99.9000) =  16768.000 ns/op
+     p(99.9900) =  16768.000 ns/op
+     p(99.9990) =  16768.000 ns/op
+     p(99.9999) =  16768.000 ns/op
+    p(100.0000) =  16768.000 ns/op
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk/jre/bin/java
+# VM options: -Xmx512m -Dclassworlds.conf=/opt/maven/bin/m2.conf -Dmaven.home=/opt/maven -Dlibrary.jansi.path=/opt/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark
+# Warmup: 5 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall
+
+# Run progress: 100.00% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 34335]
+# Fork: 1 of 2
+# Warmup Iteration   1: 1617254.000 ns/op
+# Warmup Iteration   2: 153858.000 ns/op
+# Warmup Iteration   3: 63390.000 ns/op
+# Warmup Iteration   4: 107747.000 ns/op
+# Warmup Iteration   5: 105617.000 ns/op
+Iteration   1: 80709.000 ns/op
+Iteration   2: 65675.000 ns/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+Forking using command: [/usr/lib/jvm/java-8-openjdk/jre/bin/java, -Xmx512m, -Dclassworlds.conf=/opt/maven/bin/m2.conf, -Dmaven.home=/opt/maven, -Dlibrary.jansi.path=/opt/maven/lib/jansi-native, -Dmaven.multiModuleProjectDirectory=/home/tony/repos/benchmarks/java-benchmark, -XX:CompileCommandFile=/tmp/jmh4049678066337079580compilecommand, -cp, /home/tony/repos/benchmarks/java-benchmark/target/classes:/home/tony/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/tony/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tony/.m2/repository/org/openjdk/jmh/jmh-core/1.20/jmh-core-1.20.jar:/home/tony/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 34335]
+# Fork: 2 of 2
+# Warmup Iteration   1: 1595838.000 ns/op
+# Warmup Iteration   2: 95719.000 ns/op
+# Warmup Iteration   3: 84229.000 ns/op
+# Warmup Iteration   4: 103457.000 ns/op
+# Warmup Iteration   5: 75545.000 ns/op
+Iteration   1: 98758.000 ns/op
+Iteration   2: 117041.000 ns/op
+
+
+Result "com.crimsonhexagon.StreamBenchmark.filterStreamOperationsSmall":
+  N = 4
+  mean =  90545.750 ±(99.9%) 143758.335 ns/op
+
+  Histogram, ns/op:
+    [ 60000.000,  65000.000) = 0 
+    [ 65000.000,  70000.000) = 1 
+    [ 70000.000,  75000.000) = 0 
+    [ 75000.000,  80000.000) = 0 
+    [ 80000.000,  85000.000) = 1 
+    [ 85000.000,  90000.000) = 0 
+    [ 90000.000,  95000.000) = 0 
+    [ 95000.000, 100000.000) = 1 
+    [100000.000, 105000.000) = 0 
+    [105000.000, 110000.000) = 0 
+    [110000.000, 115000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =  65675.000 ns/op
+     p(50.0000) =  89733.500 ns/op
+     p(90.0000) = 117041.000 ns/op
+     p(95.0000) = 117041.000 ns/op
+     p(99.0000) = 117041.000 ns/op
+     p(99.9000) = 117041.000 ns/op
+     p(99.9900) = 117041.000 ns/op
+     p(99.9990) = 117041.000 ns/op
+     p(99.9999) = 117041.000 ns/op
+    p(100.0000) = 117041.000 ns/op
+
+
+# Run complete. Total time: 00:05:50
+
+Benchmark                                                                                Mode     Cnt        Score        Error   Units
+StreamBenchmark.filterCompoundExpressionLarge                                           thrpt       4       ≈ 10⁻⁶               ops/ns
+StreamBenchmark.filterCompoundExpressionMedium                                          thrpt       4       ≈ 10⁻⁵               ops/ns
+StreamBenchmark.filterCompoundExpressionSingle                                          thrpt       4        0.024 ±      0.002  ops/ns
+StreamBenchmark.filterCompoundExpressionSmall                                           thrpt       4       ≈ 10⁻³               ops/ns
+StreamBenchmark.filterStreamOperationsLarge                                             thrpt       4       ≈ 10⁻⁶               ops/ns
+StreamBenchmark.filterStreamOperationsMedium                                            thrpt       4       ≈ 10⁻⁵               ops/ns
+StreamBenchmark.filterStreamOperationsSingle                                            thrpt       4        0.017 ±      0.003  ops/ns
+StreamBenchmark.filterStreamOperationsSmall                                             thrpt       4       ≈ 10⁻⁴               ops/ns
+StreamBenchmark.filterCompoundExpressionLarge                                            avgt       4   467842.741 ±  54114.738   ns/op
+StreamBenchmark.filterCompoundExpressionMedium                                           avgt       4    36177.037 ±   1099.521   ns/op
+StreamBenchmark.filterCompoundExpressionSingle                                           avgt       4       41.470 ±      7.765   ns/op
+StreamBenchmark.filterCompoundExpressionSmall                                            avgt       4     2578.108 ±    596.958   ns/op
+StreamBenchmark.filterStreamOperationsLarge                                              avgt       4   666865.390 ±  79848.950   ns/op
+StreamBenchmark.filterStreamOperationsMedium                                             avgt       4    61845.679 ±   6605.968   ns/op
+StreamBenchmark.filterStreamOperationsSingle                                             avgt       4       56.697 ±      6.182   ns/op
+StreamBenchmark.filterStreamOperationsSmall                                              avgt       4     4047.431 ±    300.693   ns/op
+StreamBenchmark.filterCompoundExpressionLarge                                          sample    8654   461849.499 ±   2891.384   ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.00      sample           413184.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.50      sample           442368.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.90      sample           520192.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.95      sample           561152.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.99      sample           652288.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.999     sample           937390.080                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p0.9999    sample          4595712.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge:filterCompoundExpressionLarge·p1.00      sample          4595712.000                ns/op
+StreamBenchmark.filterCompoundExpressionMedium                                         sample   53508    37483.253 ±    221.359   ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.00    sample            34240.000                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.50    sample            35264.000                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.90    sample            37504.000                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.95    sample            52096.000                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.99    sample            77556.480                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.999   sample           106875.392                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p0.9999  sample          1162940.211                ns/op
+StreamBenchmark.filterCompoundExpressionMedium:filterCompoundExpressionMedium·p1.00    sample          1392640.000                ns/op
+StreamBenchmark.filterCompoundExpressionSingle                                         sample   89449       92.650 ±      7.237   ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.00    sample               51.000                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.50    sample               58.000                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.90    sample               63.000                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.95    sample               70.000                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.99    sample              323.000                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.999   sample            14539.200                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p0.9999  sample            18753.760                ns/op
+StreamBenchmark.filterCompoundExpressionSingle:filterCompoundExpressionSingle·p1.00    sample            21856.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall                                          sample   95509     2741.648 ±     64.873   ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.00      sample             2376.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.50      sample             2464.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.90      sample             2608.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.95      sample             2668.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.99      sample            15728.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.999     sample            23232.000                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p0.9999    sample            26928.992                ns/op
+StreamBenchmark.filterCompoundExpressionSmall:filterCompoundExpressionSmall·p1.00      sample          1265664.000                ns/op
+StreamBenchmark.filterStreamOperationsLarge                                            sample    5520   724158.516 ±   7799.220   ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.00          sample           602112.000                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.50          sample           674816.000                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.90          sample           871424.000                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.95          sample           978892.800                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.99          sample          1357393.920                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.999         sample          1936668.672                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p0.9999        sample          4915200.000                ns/op
+StreamBenchmark.filterStreamOperationsLarge:filterStreamOperationsLarge·p1.00          sample          4915200.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium                                           sample   63214    63189.595 ±    312.648   ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.00        sample            57600.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.50        sample            58560.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.90        sample            74752.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.95        sample            92416.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.99        sample           124032.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.999       sample           160512.000                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p0.9999      sample           217617.664                ns/op
+StreamBenchmark.filterStreamOperationsMedium:filterStreamOperationsMedium·p1.00        sample          3248128.000                ns/op
+StreamBenchmark.filterStreamOperationsSingle                                           sample  134079      106.904 ±     32.160   ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.00        sample               63.000                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.50        sample               69.000                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.90        sample               78.000                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.95        sample               83.000                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.99        sample              250.200                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.999       sample            12509.440                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p0.9999      sample            18656.000                ns/op
+StreamBenchmark.filterStreamOperationsSingle:filterStreamOperationsSingle·p1.00        sample           985088.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall                                            sample  121870     4224.019 ±     91.508   ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.00          sample             3604.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.50          sample             3940.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.90          sample             4144.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.95          sample             4288.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.99          sample            17472.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.999         sample            24096.000                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p0.9999        sample            31096.154                ns/op
+StreamBenchmark.filterStreamOperationsSmall:filterStreamOperationsSmall·p1.00          sample          1423360.000                ns/op
+StreamBenchmark.filterCompoundExpressionLarge                                              ss       4  1100944.500 ± 512353.799   ns/op
+StreamBenchmark.filterCompoundExpressionMedium                                             ss       4   332664.250 ± 446000.106   ns/op
+StreamBenchmark.filterCompoundExpressionSingle                                             ss       4    15424.750 ±   8330.948   ns/op
+StreamBenchmark.filterCompoundExpressionSmall                                              ss       4    80525.250 ± 110040.374   ns/op
+StreamBenchmark.filterStreamOperationsLarge                                                ss       4  1179308.250 ± 516672.900   ns/op
+StreamBenchmark.filterStreamOperationsMedium                                               ss       4   375711.250 ± 432951.233   ns/op
+StreamBenchmark.filterStreamOperationsSingle                                               ss       4    15051.250 ±   8914.217   ns/op
+StreamBenchmark.filterStreamOperationsSmall                                                ss       4    90545.750 ± 143758.335   ns/op
+
+Benchmark result is saved to jmh-result.json
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:52 min
+[INFO] Finished at: 2018-05-02T15:15:17-04:00
+[INFO] Final Memory: 13M/277M
+[INFO] ------------------------------------------------------------------------
